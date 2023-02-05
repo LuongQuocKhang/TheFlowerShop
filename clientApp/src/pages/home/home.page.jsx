@@ -106,7 +106,9 @@ export class HomePage extends Component {
                     </div>
                     <div className='row'>
                         <div className='col-md-12 text-center'>
-                            <button type="button" class="btn btn-outline-info btn-rounded waves-light waves-effect view-more">View more</button>
+                            <Link type="button" class="btn btn-outline-info btn-rounded waves-light waves-effect view-more"
+                                to=""
+                            >Xem Thêm</Link>
                         </div>
                     </div>
                 </div>
@@ -119,7 +121,7 @@ export class HomePage extends Component {
                     </div>
                     <div className='row'>
                         <div className='col-md-12 text-center'>
-                            <button type="button" class="btn btn-outline-info btn-rounded waves-light waves-effect view-more">View more</button>
+                            <button type="button" class="btn btn-outline-info btn-rounded waves-light waves-effect view-more">Xem Thêm</button>
                         </div>
                     </div>
                 </div>
