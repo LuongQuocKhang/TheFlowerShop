@@ -1,6 +1,4 @@
 var jwt = require('jsonwebtoken');
-const TBL_ADM_ACCOUNT = require('../models/account/TBL_ADM_ACCOUNT');
-const TBL_ADM_WALLET = require('../models/wallet/TBL_ADM_WALLET');
 
 const getAccountInfo = async (req, res) => {
     try {
@@ -14,24 +12,25 @@ const getAccountInfo = async (req, res) => {
             req.headers.authorization &&
             req.headers.authorization.split(' ')[0] === 'Bearer') {
             var jwtToken = req.headers.authorization.split(' ')[1];
-            jwt.verify(jwtToken, process.env.JWT_SECRECT, async function (err, payload) {
-                const userAccount = await TBL_ADM_ACCOUNT
-                    .findOne({ "id": req.body.id })
-                    .populate("wallets");
+            jwt.verify(jwtToken, process.env.JWT_SECRECT, async function (err, payload) 
+            {
+                // const userAccount = await TBL_ADM_ACCOUNT
+                //     .findOne({ "id": req.body.id })
+                //     .populate("wallets");
 
-                if (userAccount != null) {
-                    console.log("test");
-                    account = {
-                        _id: userAccount._id,
-                        email: userAccount.email,
-                        wallets: userAccount.wallets,
-                        first_name: userAccount.first_name,
-                        last_name: userAccount.last_name
-                    };
+                // if (userAccount != null) {
+                //     console.log("test");
+                //     account = {
+                //         _id: userAccount._id,
+                //         email: userAccount.email,
+                //         wallets: userAccount.wallets,
+                //         first_name: userAccount.first_name,
+                //         last_name: userAccount.last_name
+                //     };
 
-                    jsonResponse.data = account;
-                    res.json(jsonResponse)
-                }
+                //     jsonResponse.data = account;
+                //     res.json(jsonResponse)
+                // }
             })
         }
         else {
