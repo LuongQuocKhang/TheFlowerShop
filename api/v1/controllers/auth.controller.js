@@ -1,5 +1,4 @@
 var jwt = require('jsonwebtoken');
-var bcrypt = require('bcrypt');
 
 const isAuthenticated = function(req, res, next) {
     var jsonResponse = {
