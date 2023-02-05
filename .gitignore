@@ -1,2 +1,4 @@
-node_modules
-clientApp\build
+.env
+.node_modules
+.LICENSE
+.package-lock.json
