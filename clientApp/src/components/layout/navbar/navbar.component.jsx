@@ -112,72 +112,48 @@ export class NavbarComponent extends Component {
                             <div id="navigation">
                                 <ul className="navigation-menu">
                                     <li className="has-submenu">
-                                        <Link to="/"><i className="icon-speedometer"></i>Homepage</Link>
+                                        <Link to="/"><i className="icon-speedometer"></i>Trang chủ</Link>
                                     </li>
                                     <li class="has-submenu">
-                                        <Link to="#"><i class="icon-layers"></i>Occasions</Link>
+                                        <Link to="/flower/FreshFlow">Hoa Tươi</Link>
                                         <ul class="submenu">
-                                            <li><Link to="apps-calendar.html">Birthday flowers</Link></li>
-                                            <li><Link to="apps-tickets.html">Grand opening flowers</Link></li>
-                                            <li><Link to="apps-taskboard.html">Congratulation flowers</Link></li>
-                                            <li><Link to="apps-task-detail.html">Sympathy - funerals</Link></li>
-                                            <li><Link to="apps-contacts.html">Get well</Link></li>
-                                            <li><Link to="apps-projects.html">Love flowers</Link></li>
-                                            <li><Link to="apps-companies.html">Thanks Flowers</Link></li>
-                                            <li><Link to="apps-file-manager.html">Graduation</Link></li>
+                                            <li><Link to="apps-calendar.html">Bó</Link></li>
+                                            <li><Link to="apps-tickets.html">Giỏ</Link></li>
+                                            <li><Link to="apps-taskboard.html">Hộp</Link></li>
+                                            <li><Link to="apps-task-detail.html">Kệ Khai Trương</Link></li>
+                                            <li><Link to="apps-contacts.html">Kệ Chia Buồn</Link></li>
                                         </ul>
                                     </li>
                                     <li class="has-submenu">
-                                        <Link to="#"><i class="icon-layers"></i>Objects</Link>
-                                        <ul class="submenu">
-                                            <li><Link to="apps-calendar.html">Flowers for Lover</Link></li>
-                                            <li><Link to="apps-tickets.html">Flowers for friends</Link></li>
-                                            <li><Link to="apps-taskboard.html">Flowers for wife</Link></li>
-                                            <li><Link to="apps-task-detail.html">Flowers for husband</Link></li>
-                                            <li><Link to="apps-contacts.html">Flowers for mom</Link></li>
-                                            <li><Link to="apps-projects.html">Flowers for children</Link></li>
-                                            <li><Link to="apps-companies.html">Flowers for women</Link></li>
-                                            <li><Link to="apps-file-manager.html">Flowers for men</Link></li>
-                                            <li><Link to="apps-file-manager.html">Flowers for the boss</Link></li>
-                                            <li><Link to="apps-file-manager.html">Flowers for Co-worker</Link></li>
-                                        </ul>
+                                        <Link to="#">Hoa Cưới</Link>
                                     </li>
                                     <li class="has-submenu">
-                                        <Link to="#"><i class="icon-layers"></i>Flowers</Link>
+                                        <Link to="#">Hoa giấy</Link>     
                                         <ul class="submenu">
-                                            <li><Link to="/flower/Only-rose">Only rose</Link></li>
-                                            <li><Link to="/flower/Roses">Roses</Link></li>
-                                            <li><Link to="/flower/Sunflowers">Sunflowers</Link></li>
-                                            <li><Link to="/flower/Gerberas">Gerberas</Link></li>
-                                            <li><Link to="/flower/Orchids">Orchids</Link></li>
-                                            <li><Link to="/flower/Carnations">Carnations</Link></li>
-                                            <li><Link to="/flower/Lisianthus">Lisianthus</Link></li>
-                                            <li><Link to="/flower/Lilis">Lilis</Link></li>
-                                            <li><Link to="/flower/Baby-flower">Baby flower</Link></li>
-                                            <li><Link to="/flower/Chrysanthemum">Chrysanthemum</Link></li>
-                                        </ul>
+                                            <li><Link to="apps-calendar.html">Bó</Link></li>
+                                            <li><Link to="apps-tickets.html">Giỏ</Link></li>
+                                            <li><Link to="apps-taskboard.html">Hộp</Link></li>
+                                        </ul>        
                                     </li>
                                     <li class="has-submenu">
-                                        <Link to="#"><i class="icon-layers"></i>Collections</Link>
+                                        <Link to="#">Hoa Sáp</Link>
                                         <ul class="submenu">
-                                            <li><Link to="apps-calendar.html">Luxury Flowers</Link></li>
-                                            <li><Link to="apps-tickets.html">Economic</Link></li>
-                                            <li><Link to="apps-taskboard.html">Sample new flowers</Link></li>
-                                            <li><Link to="apps-task-detail.html">Deal of the week</Link></li>
-                                            <li><Link to="apps-contacts.html">Vietnamese Women's Day</Link></li>
-                                            <li><Link to="apps-projects.html">Teacher's Day</Link></li>
-                                            <li><Link to="apps-companies.html">Noel</Link></li>
-                                            <li><Link to="apps-file-manager.html">Tet Holiday</Link></li>
-                                            <li><Link to="apps-file-manager.html">Event flowers</Link></li>
-                                            <li><Link to="apps-file-manager.html">Love flowers</Link></li>
-                                            <li><Link to="apps-file-manager.html">Women's day</Link></li>
-                                        </ul>
+                                            <li><Link to="apps-calendar.html">Bó</Link></li>
+                                            <li><Link to="apps-tickets.html">Giỏ</Link></li>
+                                            <li><Link to="apps-taskboard.html">Hộp</Link></li>
+                                        </ul>   
                                     </li>
-                                    <li className="has-submenu">
-                                        <Link to="/backtesting"><i className="icon-fire"></i>Wedding Decoration</Link>
+                                    <li class="has-submenu">
+                                        <Link to="#">Hoa Gấu Bông/Gấu Bông</Link>             
                                     </li>
-                                    <li className="has-submenu">
-                                        <Link to="/backtesting"><i className="icon-fire"></i>Card Design</Link>
+                                    <li class="has-submenu">
+                                        <Link to="#">Giỏ Hoa Trái Cây</Link>             
+                                    </li>
+                                    <li class="has-submenu">
+                                        <Link to="#">Tráp Cưới</Link>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <Link to="#">Thiệp Cưới</Link>
                                     </li>
                                 </ul>
                             </div>

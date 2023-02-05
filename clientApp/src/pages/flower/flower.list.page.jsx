@@ -49,6 +49,216 @@ export class FlowerListPage extends Component {
                 img: "/assets/images/flowers/hop-hoa-hong-do.jpg",
                 price: "250.000",
                 isSale: false
+            },
+            {
+                id: 1,
+                title: "new energy",
+                img: "/assets/images/flowers/306089100_486173836851826_6750157363461441274_n.jpg",
+                price: "200.000",
+                isSale: true
+            },
+            {
+                id: 2,
+                title: "Giỏ hoa hồng vàng",
+                img: "/assets/images/flowers/gio-hoa-hong-vang.jpg",
+                price: "200.000",
+                isSale: false
+            },
+            {
+                id: 3,
+                title: "Mix Hoa hồng trắng và hồng",
+                img: "/assets/images/flowers/hoa-hong-hong-trang.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 4,
+                title: "Hoa mẫu đơn",
+                img: "/assets/images/flowers/hoa-mau-don.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 5,
+                title: "Hoa hướng dương",
+                img: "/assets/images/flowers/hoa-huong-duong.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 6,
+                title: "Hộp hoa hổng đỏ",
+                img: "/assets/images/flowers/hop-hoa-hong-do.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 1,
+                title: "new energy",
+                img: "/assets/images/flowers/306089100_486173836851826_6750157363461441274_n.jpg",
+                price: "200.000",
+                isSale: true
+            },
+            {
+                id: 2,
+                title: "Giỏ hoa hồng vàng",
+                img: "/assets/images/flowers/gio-hoa-hong-vang.jpg",
+                price: "200.000",
+                isSale: false
+            },
+            {
+                id: 3,
+                title: "Mix Hoa hồng trắng và hồng",
+                img: "/assets/images/flowers/hoa-hong-hong-trang.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 4,
+                title: "Hoa mẫu đơn",
+                img: "/assets/images/flowers/hoa-mau-don.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 5,
+                title: "Hoa hướng dương",
+                img: "/assets/images/flowers/hoa-huong-duong.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 6,
+                title: "Hộp hoa hổng đỏ",
+                img: "/assets/images/flowers/hop-hoa-hong-do.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 1,
+                title: "new energy",
+                img: "/assets/images/flowers/306089100_486173836851826_6750157363461441274_n.jpg",
+                price: "200.000",
+                isSale: true
+            },
+            {
+                id: 2,
+                title: "Giỏ hoa hồng vàng",
+                img: "/assets/images/flowers/gio-hoa-hong-vang.jpg",
+                price: "200.000",
+                isSale: false
+            },
+            {
+                id: 3,
+                title: "Mix Hoa hồng trắng và hồng",
+                img: "/assets/images/flowers/hoa-hong-hong-trang.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 4,
+                title: "Hoa mẫu đơn",
+                img: "/assets/images/flowers/hoa-mau-don.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 5,
+                title: "Hoa hướng dương",
+                img: "/assets/images/flowers/hoa-huong-duong.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 6,
+                title: "Hộp hoa hổng đỏ",
+                img: "/assets/images/flowers/hop-hoa-hong-do.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 1,
+                title: "new energy",
+                img: "/assets/images/flowers/306089100_486173836851826_6750157363461441274_n.jpg",
+                price: "200.000",
+                isSale: true
+            },
+            {
+                id: 2,
+                title: "Giỏ hoa hồng vàng",
+                img: "/assets/images/flowers/gio-hoa-hong-vang.jpg",
+                price: "200.000",
+                isSale: false
+            },
+            {
+                id: 3,
+                title: "Mix Hoa hồng trắng và hồng",
+                img: "/assets/images/flowers/hoa-hong-hong-trang.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 4,
+                title: "Hoa mẫu đơn",
+                img: "/assets/images/flowers/hoa-mau-don.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 5,
+                title: "Hoa hướng dương",
+                img: "/assets/images/flowers/hoa-huong-duong.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 6,
+                title: "Hộp hoa hổng đỏ",
+                img: "/assets/images/flowers/hop-hoa-hong-do.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 1,
+                title: "new energy",
+                img: "/assets/images/flowers/306089100_486173836851826_6750157363461441274_n.jpg",
+                price: "200.000",
+                isSale: true
+            },
+            {
+                id: 2,
+                title: "Giỏ hoa hồng vàng",
+                img: "/assets/images/flowers/gio-hoa-hong-vang.jpg",
+                price: "200.000",
+                isSale: false
+            },
+            {
+                id: 3,
+                title: "Mix Hoa hồng trắng và hồng",
+                img: "/assets/images/flowers/hoa-hong-hong-trang.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 4,
+                title: "Hoa mẫu đơn",
+                img: "/assets/images/flowers/hoa-mau-don.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 5,
+                title: "Hoa hướng dương",
+                img: "/assets/images/flowers/hoa-huong-duong.jpg",
+                price: "250.000",
+                isSale: false
+            },
+            {
+                id: 6,
+                title: "Hộp hoa hổng đỏ",
+                img: "/assets/images/flowers/hop-hoa-hong-do.jpg",
+                price: "250.000",
+                isSale: false
             }
         ];
 
@@ -57,7 +267,7 @@ export class FlowerListPage extends Component {
                 let detailLink = '/flower/' + item.id;
                 return (
                         <>
-                            <div className="col-md-3 col-lg-3">
+                            <div className="col-md-2 col-lg-2">
                                 <Link to={detailLink}>
                                     <FlowerCardComponent key={"flower_deal_" + item.id}
                                         flower={item} />
@@ -85,14 +295,7 @@ export class FlowerListPage extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className='col-md-3'>
-                        <div className="card-box task-detail">
-                            <div className='row'>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-md-8'>
+                    <div className='col-md-12'>
                         <div className="card-box task-detail">
                             <div className='row'>
                                 {flowerList}
