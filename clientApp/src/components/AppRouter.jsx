@@ -1,21 +1,15 @@
 import React, { Component } from 'react'
 
 import { Routes, Route } from "react-router-dom";
-import DashboardComponent from './dashboard/dashboard.component';
-import SwapComponent from './swap/swap.component';
-import TokensComponent from './tokens/tokens.component';
-import WalletComponent from './wallet/wallet.component';
-import TradeComponent from './trade/trade.component';
-import TokensDetailComponent from './tokens/tokensDetail.component';
-import SignalComponent from './signals/signal.component';
-import BacktestingComponent from './backtesting/backtesting.component';
-import StrategiesComponent from './strategies/strategies.component';
-import StrategiesNewComponent from './strategies/strategies.new.component';
-import StrategiesEditComponent from './strategies/strategies.edit.component';
-import LoginComponent from './login/login.component';
 
 import NavbarComponent from './layout/navbar/navbar.component';
 import FooterComponent from './layout/footer/footer.component';
+
+// pages
+import HomePage from '../pages/home/home.page';
+import FlowerDetailPage from '../pages/flower/flower.detail.page';
+import CartPage from '../pages/cart/cart.page';
+import FlowerListPage from '../pages/flower/flower.list.page';
 
 export class AppRouter extends Component {
     render() {
@@ -25,14 +19,23 @@ export class AppRouter extends Component {
                 <div className="wrapper">
                     <div className="container-fluid">
                         <Routes>
-                            
+                            <Route path='/' element={
+                                <HomePage />
+                            }></Route>
+                            <Route path='/flower/detail/:id' element={
+                                <FlowerDetailPage />
+                            }></Route>
+                            <Route path='/cart' element={
+                                <CartPage />
+                            }></Route>
+                            <Route path='/flower/:type' element={
+                                <FlowerListPage />
+                            }></Route>
                         </Routes>
                     </div>
                 </div>
                 <FooterComponent />
             </>
-
-
         )
     }
 }
