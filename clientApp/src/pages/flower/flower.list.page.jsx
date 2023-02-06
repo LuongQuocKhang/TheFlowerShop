@@ -270,10 +270,10 @@ export class FlowerListPage extends Component {
                 return (
                         <>
                             <div className="col-md-3 col-lg-3">
-                                <Link to={detailLink}>
+                                <a href={detailLink}>
                                     <FlowerCardComponent key={"flower_deal_" + item.id}
                                         flower={item} />
-                                </Link>
+                                </a>
                             </div>
                         </>
                     )

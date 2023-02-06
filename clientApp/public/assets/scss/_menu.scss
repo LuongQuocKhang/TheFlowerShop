@@ -208,7 +208,7 @@
   Responsive Menu
 */
 
-@media (min-width: 992px) {
+@media (min-width: 1280x) {
     #topnav {
         .navigation-menu>li>a {
             padding-top: 20px;
@@ -325,7 +325,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200) {
     .wrapper {
         padding-top: 60px;
     }

@@ -1,9 +1,26 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { Button, Modal } from 'react-bootstrap';
 
 import './flower.detail.page.css'
 
 export class FlowerDetailPage extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            showModal: false
+        };
+    }
+
+    openImage() {
+        this.setState({ showModal: true });
+    }
+
+    close() {
+        this.setState({ showModal: false });
+    }
+
     render() {
         return (
             <>
@@ -26,11 +43,26 @@ export class FlowerDetailPage extends Component {
                     <div className="col-lg-12">
                         <div className="card-box task-detail">
                             <div className='row'>
-                                <div className='col-md-12' style={{textAlign: "center"}}>
-                                    <img className='img-flower-detail'
-                                        src="/assets/images/flowers/gio-hoa-hong-vang.jpg" alt="" />
+                                <div className='col-md-12' style={{ textAlign: "center" }}>
+
+
+                                    <div className="portfolioContainer">
+                                        <div className="col-sm-6 col-md-4 webdesign illustrator">
+                                            <Link to="#" className="image-popup" onClick={() => this.openImage()}>
+                                                <div className="portfolio-masonry-box">
+                                                    <div className="portfolio-masonry-img">
+                                                        <img src="/assets/images/flowers/gio-hoa-hong-vang.jpg" className="thumb-img img-fluid" alt="work-thumbnail" />
+                                                    </div>
+                                                    <div className="portfolio-masonry-detail">
+                                                        <h4 className="font-18">Street Photography</h4>
+                                                        <p>Graphic Design</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='col-md-12'>
+                                <div className='col-md-12' style={{marginTop: 10}}>
                                     <div className="r_item">
                                         <h2>
                                             Hộp hoa tươi - Sắc Hồng Xinh - 5424</h2>
@@ -54,21 +86,26 @@ export class FlowerDetailPage extends Component {
                                         </p>
 
                                         <div className="area_order">
-                                            <Link to="javascript:void(0);" className="add-cart hplAddCart" 
+                                            <Link to="" className="add-cart hplAddCart"
                                             >Thêm vào giỏ</Link>
-                                            <Link to="" className="buy-now hplBuyNow" style={{marginLeft: 10}}>Mua ngay</Link>
+                                            <Link to="" className="buy-now hplBuyNow" style={{ marginLeft: 10 }}>Mua ngay</Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
                 </div>
+
+                <Modal show={this.state.showModal} onHide={() => this.close()}
+                    dialogClassName='modal-lg'
+                >
+                    <Modal.Header closeButton>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <img src="/assets/images/flowers/gio-hoa-hong-vang.jpg" className="thumb-img img-fluid" alt="work-thumbnail" />
+                    </Modal.Body>
+                </Modal>
             </>
         )
     }

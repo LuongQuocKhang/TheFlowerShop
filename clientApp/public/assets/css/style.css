@@ -280,7 +280,7 @@ File: Main Css File
 /*
   Responsive Menu
 */
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   #topnav .navigation-menu > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -6032,7 +6032,7 @@ File: Responsive
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
   .container-alt {
     width: 970px;
   }
