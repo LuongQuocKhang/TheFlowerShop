@@ -4,6 +4,25 @@ import AuthService from '../../../services/auth.service'
 
 export class NavbarComponent extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            isMenuOpen: false
+        }
+    }
+
+    openMenuForSmallScreen() {
+        this.setState({
+            isMenuOpen: !this.state.isMenuOpen
+        });    
+    }
+
+    closeMenuAfterClicked() {
+        this.setState({
+            isMenuOpen: false
+        });    
+    }
+
     render() {
 
         const logout = async () => {
@@ -11,6 +30,8 @@ export class NavbarComponent extends Component {
             this.props.setToken(null);
             window.location.to = "/login";
         }
+
+       
 
         return (
             <>
@@ -27,14 +48,12 @@ export class NavbarComponent extends Component {
                                     <img src="/assets/images/logo.png" alt="" height="22" className="logo-large" />
                                 </Link>
                             </div>
-
-
                             <div className="menu-extras topbar-custom">
-
                                 <ul className="list-unstyled topbar-right-menu float-right mb-0">
 
                                     <li className="menu-item">
-                                        <Link className="navbar-toggle nav-link" to='#'>
+                                        <Link className="navbar-toggle nav-link" to='#'
+                                        onClick={() => this.openMenuForSmallScreen()}>
                                             <div className="lines">
                                                 <span></span>
                                                 <span></span>
@@ -109,51 +128,53 @@ export class NavbarComponent extends Component {
 
                     <div className="navbar-custom">
                         <div className="container-fluid">
-                            <div id="navigation">
+                            <div id="navigation" style={{display: this.state.isMenuOpen ? "block": "none"}}>
                                 <ul className="navigation-menu">
                                     <li className="has-submenu">
-                                        <Link to="/"><i className="icon-speedometer"></i>Trang chủ</Link>
+                                        <Link to="/" onClick={() => this.closeMenuAfterClicked()}>
+                                        <i className="icon-speedometer"></i>Trang chủ</Link>
                                     </li>
-                                    <li class="has-submenu">
-                                        <Link to="/flower/FreshFlow">Hoa Tươi</Link>
-                                        <ul class="submenu">
-                                            <li><Link to="apps-calendar.html">Bó</Link></li>
-                                            <li><Link to="apps-tickets.html">Giỏ</Link></li>
-                                            <li><Link to="apps-taskboard.html">Hộp</Link></li>
-                                            <li><Link to="apps-task-detail.html">Kệ Khai Trương</Link></li>
-                                            <li><Link to="apps-contacts.html">Kệ Chia Buồn</Link></li>
+                                    <li className="has-submenu">
+                                        <Link to="/flower/FreshFlow"
+                                        onClick={() => this.closeMenuAfterClicked()}>Hoa Tươi</Link>
+                                        <ul className="submenu">
+                                            <li><Link to="apps-calendar.html" onClick={() => this.closeMenuAfterClicked()}>Bó</Link></li>
+                                            <li><Link to="apps-tickets.html" onClick={() => this.closeMenuAfterClicked()}>Giỏ</Link></li>
+                                            <li><Link to="apps-taskboard.html" onClick={() => this.closeMenuAfterClicked()}>Hộp</Link></li>
+                                            <li><Link to="apps-task-detail.html" onClick={() => this.closeMenuAfterClicked()}>Kệ Khai Trương</Link></li>
+                                            <li><Link to="apps-contacts.html" onClick={() => this.closeMenuAfterClicked()}>Kệ Chia Buồn</Link></li>
                                         </ul>
                                     </li>
-                                    <li class="has-submenu">
-                                        <Link to="#">Hoa Cưới</Link>
+                                    <li className="has-submenu">
+                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa Cưới</Link>
                                     </li>
-                                    <li class="has-submenu">
-                                        <Link to="#">Hoa giấy</Link>     
-                                        <ul class="submenu">
-                                            <li><Link to="apps-calendar.html">Bó</Link></li>
-                                            <li><Link to="apps-tickets.html">Giỏ</Link></li>
-                                            <li><Link to="apps-taskboard.html">Hộp</Link></li>
+                                    <li className="has-submenu">
+                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa giấy</Link>     
+                                        <ul className="submenu">
+                                            <li><Link to="apps-calendar.html" onClick={() => this.closeMenuAfterClicked()}>Bó</Link></li>
+                                            <li><Link to="apps-tickets.html" onClick={() => this.closeMenuAfterClicked()}>Giỏ</Link></li>
+                                            <li><Link to="apps-taskboard.html" onClick={() => this.closeMenuAfterClicked()}>Hộp</Link></li>
                                         </ul>        
                                     </li>
-                                    <li class="has-submenu">
-                                        <Link to="#">Hoa Sáp</Link>
-                                        <ul class="submenu">
-                                            <li><Link to="apps-calendar.html">Bó</Link></li>
-                                            <li><Link to="apps-tickets.html">Giỏ</Link></li>
-                                            <li><Link to="apps-taskboard.html">Hộp</Link></li>
+                                    <li className="has-submenu">
+                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa Sáp</Link>
+                                        <ul className="submenu">
+                                            <li><Link to="apps-calendar.html" onClick={() => this.closeMenuAfterClicked()}>Bó</Link></li>
+                                            <li><Link to="apps-tickets.html" onClick={() => this.closeMenuAfterClicked()}>Giỏ</Link></li>
+                                            <li><Link to="apps-taskboard.html" onClick={() => this.closeMenuAfterClicked()}>Hộp</Link></li>
                                         </ul>   
                                     </li>
-                                    <li class="has-submenu">
-                                        <Link to="#">Hoa Gấu Bông/Gấu Bông</Link>             
+                                    <li className="has-submenu">
+                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa Gấu Bông/Gấu Bông</Link>             
                                     </li>
-                                    <li class="has-submenu">
+                                    <li className="has-submenu" onClick={() => this.closeMenuAfterClicked()}>
                                         <Link to="#">Giỏ Hoa Trái Cây</Link>             
                                     </li>
-                                    <li class="has-submenu">
-                                        <Link to="#">Tráp Cưới</Link>
+                                    <li className="has-submenu">
+                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Tráp Cưới</Link>
                                     </li>
-                                    <li class="has-submenu">
-                                        <Link to="#">Thiệp Cưới</Link>
+                                    <li className="has-submenu">
+                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Thiệp Cưới</Link>
                                     </li>
                                 </ul>
                             </div>

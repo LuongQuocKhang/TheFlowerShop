@@ -17,7 +17,7 @@
 .r_item {
     clear: right;
     padding-left: 15px;
-    width: calc(100% - 300px);
+    width: 100%;
 }
 .r_item h2 {
     font-weight: 600;
@@ -78,7 +78,6 @@
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    margin-left: 10px;
     color: #fff;
     width: 200px;
 }
@@ -93,4 +92,8 @@
 a:link, a:focus, a:visited {
     text-decoration: none;
     border: none;
+}
+.flower-title {
+    text-align: center;
+    color: black;
 }

@@ -17,12 +17,15 @@ export class AdvertisementComponent extends Component {
 
         let banners = [
             {
+                id: 1,
                 src: "assets/images/banner/banner-noel.jpg"
             },
             {
+                id: 2,
                 src: "assets/images/banner/cay-thong-giang-sinh.jpg"
             },
             {
+                id: 3,
                 src: "assets/images/banner/only-rose.jpg"
             }
         ];
@@ -30,7 +33,9 @@ export class AdvertisementComponent extends Component {
         bannerCarousel = banners.map((banner) => {
             return (
                 <div>
-                    <img src={banner.src} alt="Card cap" style={{height: 450}} />
+                    <img key={banner.id}
+                        src={banner.src}
+                        alt="Card cap" style={{height: 450}} />
                 </div>
             )
         })
@@ -41,6 +46,7 @@ export class AdvertisementComponent extends Component {
                     autoPlay={true}
                     infiniteLoop={true}
                     showThumbs={false}
+                    transitionTime={2}
                 >
                     
                    {bannerCarousel}

@@ -26,11 +26,11 @@ export class FlowerDetailPage extends Component {
                     <div className="col-lg-12">
                         <div className="card-box task-detail">
                             <div className='row'>
-                                <div className='col-md-4' style={{overflow: "hidden"}}>
+                                <div className='col-md-12' style={{textAlign: "center"}}>
                                     <img className='img-flower-detail'
                                         src="/assets/images/flowers/gio-hoa-hong-vang.jpg" alt="" />
                                 </div>
-                                <div className='col-md-6'>
+                                <div className='col-md-12'>
                                     <div className="r_item">
                                         <h2>
                                             Hộp hoa tươi - Sắc Hồng Xinh - 5424</h2>
@@ -56,7 +56,7 @@ export class FlowerDetailPage extends Component {
                                         <div className="area_order">
                                             <Link to="javascript:void(0);" className="add-cart hplAddCart" 
                                             >Thêm vào giỏ</Link>
-                                            <Link to="" className="buy-now hplBuyNow">Mua ngay</Link>
+                                            <Link to="" className="buy-now hplBuyNow" style={{marginLeft: 10}}>Mua ngay</Link>
                                         </div>
                                     </div>
                                 </div>

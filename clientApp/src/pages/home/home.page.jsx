@@ -13,42 +13,42 @@ export class HomePage extends Component {
 
         let hotDeals = [
             {
-                id: 1,
+                key: 1,
                 title: "new energy",
                 img: "assets/images/flowers/306089100_486173836851826_6750157363461441274_n.jpg",
                 price: "200.000",
                 isSale: true
             },
             {
-                id: 2,
+                key: 2,
                 title: "Giỏ hoa hồng vàng",
                 img: "assets/images/flowers/gio-hoa-hong-vang.jpg",
                 price: "200.000",
                 isSale: false
             },
             {
-                id: 3,
+                key: 3,
                 title: "Mix Hoa hồng trắng và hồng",
                 img: "assets/images/flowers/hoa-hong-hong-trang.jpg",
                 price: "250.000",
                 isSale: false
             },
             {
-                id: 4,
+                key: 4,
                 title: "Hoa mẫu đơn",
                 img: "assets/images/flowers/hoa-mau-don.jpg",
                 price: "250.000",
                 isSale: false
             },
             {
-                id: 5,
+                key: 5,
                 title: "Hoa hướng dương",
                 img: "assets/images/flowers/hoa-huong-duong.jpg",
                 price: "250.000",
                 isSale: false
             },
             {
-                id: 6,
+                key: 6,
                 title: "Hộp hoa hổng đỏ",
                 img: "assets/images/flowers/hop-hoa-hong-do.jpg",
                 price: "250.000",
@@ -58,12 +58,12 @@ export class HomePage extends Component {
 
         if (hotDeals.length > 0) {
             hotDealList = hotDeals.map((item) => {
-                let detailLink = '/flower/detail/' + item.id;
+                let detailLink = '/flower/detail/' + item.key;
                 return (
                         <>
                             <div className="col-md-6 col-lg-2">
                                 <Link to={detailLink}>
-                                    <FlowerCardComponent key={"flower_deal_" + item.id}
+                                    <FlowerCardComponent key={"flower_deal_" + item.key}
                                         flower={item} />
                                 </Link>
                             </div>
@@ -106,7 +106,7 @@ export class HomePage extends Component {
                     </div>
                     <div className='row'>
                         <div className='col-md-12 text-center'>
-                            <Link type="button" class="btn btn-outline-info btn-rounded waves-light waves-effect view-more"
+                            <Link type="button" className="btn btn-outline-info btn-rounded waves-light waves-effect view-more"
                                 to=""
                             >Xem Thêm</Link>
                         </div>
@@ -121,7 +121,7 @@ export class HomePage extends Component {
                     </div>
                     <div className='row'>
                         <div className='col-md-12 text-center'>
-                            <button type="button" class="btn btn-outline-info btn-rounded waves-light waves-effect view-more">Xem Thêm</button>
+                            <button type="button" className="btn btn-outline-info btn-rounded waves-light waves-effect view-more">Xem Thêm</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ export class HomePage extends Component {
                     </div>
                     <div className='row'>
                         <div className='col-md-12 text-center'>
-                            <button type="button" class="btn btn-outline-info btn-rounded waves-light waves-effect view-more">View more</button>
+                            <button type="button" className="btn btn-outline-info btn-rounded waves-light waves-effect view-more">Xem thêm</button>
                         </div>
                     </div>
                 </div>

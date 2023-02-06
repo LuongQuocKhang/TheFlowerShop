@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { FlowerCardComponent} from '../../components/flowerCard/flowerCard.component'
 
+import "./flower.list.component.css"
+
 export class FlowerListPage extends Component {
     render() {
 
@@ -267,7 +269,7 @@ export class FlowerListPage extends Component {
                 let detailLink = '/flower/' + item.id;
                 return (
                         <>
-                            <div className="col-md-2 col-lg-2">
+                            <div className="col-md-3 col-lg-3">
                                 <Link to={detailLink}>
                                     <FlowerCardComponent key={"flower_deal_" + item.id}
                                         flower={item} />
