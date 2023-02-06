@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build" : "cd clientApp && npm install --legacy-peer-deps && npm run build & cd ..",
     "start": "cd clientApp && npm install --legacy-peer-deps && npm run build & cd .. & node app.js",
     "heroku-postbuild": "cd clientApp && npm install --legacy-peer-deps && npm run build"
   },
