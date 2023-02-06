@@ -39,11 +39,7 @@ export class NavbarComponent extends Component {
                     <div className="topbar-main">
                         <div className="container-fluid">
                             <div className="logo">
-                                <Link to="index.html" className="logo">
-                                    <span className="logo-small"><i className="mdi mdi-radar"></i></span>
-                                    <span className="logo-large"><i className="mdi mdi-radar"></i> Highdmin</span>
-                                </Link>
-                                <Link to="index.html" className="logo">
+                                <Link to="/" className="logo">
                                     <img src="/assets/images/logo_sm.png" alt="" height="26" className="logo-small" />
                                     <img src="/assets/images/logo.png" alt="" height="22" className="logo-large" />
                                 </Link>
