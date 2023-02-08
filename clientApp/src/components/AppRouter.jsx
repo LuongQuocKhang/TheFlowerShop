@@ -10,6 +10,7 @@ import HomePage from '../pages/home/home.page';
 import FlowerDetailPage from '../pages/flower/flower.detail.page';
 import CartPage from '../pages/cart/cart.page';
 import FlowerListPage from '../pages/flower/flower.list.page';
+import OrderPage from '../pages/orders/order.page'
 
 export class AppRouter extends Component {
     render() {
@@ -31,6 +32,11 @@ export class AppRouter extends Component {
                             <Route path='/flower/:type' element={
                                 <FlowerListPage />
                             }></Route>
+                            <Route path='/orders' element={
+                                <OrderPage />
+                            }></Route>
+
+
                         </Routes>
                     </div>
                 </div>

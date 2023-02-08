@@ -86,9 +86,10 @@ export class FlowerDetailPage extends Component {
                                         </p>
 
                                         <div className="area_order">
-                                            <Link to="" className="add-cart hplAddCart"
-                                            >Thêm vào giỏ</Link>
-                                            <Link to="" className="buy-now hplBuyNow" style={{ marginLeft: 10 }}>Mua ngay</Link>
+                                            <button type="button" className="btn btn-outline-primary btn-rounded waves-light waves-effect">Thêm vào giỏ</button>
+                                            <button type="button" className="btn btn-danger btn-rounded waves-light waves-effect"
+                                            style={{marginLeft: 10,
+                                            backgroundColor: "#f26c24"}}>Mua Ngay</button>
                                         </div>
                                     </div>
                                 </div>

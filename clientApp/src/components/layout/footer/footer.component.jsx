@@ -7,7 +7,7 @@ export class FooterComponent extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        2018 © Highdmin. - Coderthemes.com
+                        2023 © Shop Hoa Trinh Trinh
                     </div>
                 </div>
             </div>

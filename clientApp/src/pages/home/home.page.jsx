@@ -8,6 +8,22 @@ import { Link } from 'react-router-dom';
 
 export class HomePage extends Component {
 
+    constructor() {
+        super();
+        this.state = {
+            showAdvertisement: true
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.resize.bind(this));
+        this.resize();
+    }
+
+    resize() {
+        this.setState({showAdvertisement: window.innerWidth > 760});
+    }
+    
     render() {
         let hotDealList = "", newFlowerList = "";
 
@@ -91,7 +107,7 @@ export class HomePage extends Component {
                 </div>
 
                 {/* run advertisement */}
-                <div className='card-box'>
+                <div className='card-box' style={{display: this.state.showAdvertisement ? "block": "none"}}>
                     <div className='row'>
                         <div className='col-md-12'>
                             <AdvertisementComponent />

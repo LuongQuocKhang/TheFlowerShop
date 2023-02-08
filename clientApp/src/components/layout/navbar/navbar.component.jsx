@@ -30,9 +30,6 @@ export class NavbarComponent extends Component {
             this.props.setToken(null);
             window.location.to = "/login";
         }
-
-       
-
         return (
             <>
                 <header id="topnav">
@@ -80,9 +77,8 @@ export class NavbarComponent extends Component {
                                     </li>
                
                                     <li className="dropdown notification-list">
-                                        <Link className="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" role="button"
-                                            to='/cart'
-                                            aria-haspopup="false" aria-expanded="false">
+                                        <Link className="nav-link dropdown-toggle arrow-none waves-effect"
+                                            to='/cart'>
                                             <i className=" mdi mdi-cart-outline noti-icon"></i>
                                             <span className="badge badge-danger badge-pill noti-icon-badge">6</span>
                                         </Link>
@@ -97,17 +93,11 @@ export class NavbarComponent extends Component {
                                             <div className="dropdown-item noti-title">
                                                 <h6 className="text-overflow m-0">Welcome !</h6>
                                             </div>
-                                            <Link to="#" className="dropdown-item notify-item">
-                                                <i className="fi-head"></i> <span>My Account</span>
+                                            <Link to='/orders' className="dropdown-item notify-item">
+                                                <i className="fi-cog"></i> <span>Đơn hàng</span>
                                             </Link>
                                             <Link to='/orders' className="dropdown-item notify-item">
-                                                <i className="fi-cog"></i> <span>Orders</span>
-                                            </Link>
-                                            <Link to='/wallet' className="dropdown-item notify-item">
-                                                <i className="fi-help"></i> <span>Wallet</span>
-                                            </Link>
-                                            <Link to="#" className="dropdown-item notify-item">
-                                                <i className="fi-lock"></i> <span>Lock Screen</span>
+                                                <i className="fi-cog"></i> <span>Báo cáo</span>
                                             </Link>
                                             <Link to="#" className="dropdown-item notify-item"
                                                 onClick={() => logout()}>
