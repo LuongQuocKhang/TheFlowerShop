@@ -280,7 +280,7 @@ File: Main Css File
 /*
   Responsive Menu
 */
-@media (min-width: 1380px) {
+@media (min-width: 880px) {
   #topnav .navigation-menu > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -390,7 +390,7 @@ File: Main Css File
   }
 }
 /* Change sise of navbar when screen size change */
-@media (max-width: 1380px) {
+@media (max-width: 880px) {
   .wrapper {
     padding-top: 60px;
   }

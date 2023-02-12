@@ -137,21 +137,13 @@ export class NavbarComponent extends Component {
                                     <li className="has-submenu">
                                         <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa giấy</Link>     
                                         <ul className="submenu">
-                                            <li><Link to="apps-calendar.html" onClick={() => this.closeMenuAfterClicked()}>Bó</Link></li>
+                                            <li><Link to="apps-calendar.html" onClick={() => this.closeMenuAfterClicked()}>Hoa sáp</Link></li>
                                             <li><Link to="apps-tickets.html" onClick={() => this.closeMenuAfterClicked()}>Giỏ</Link></li>
                                             <li><Link to="apps-taskboard.html" onClick={() => this.closeMenuAfterClicked()}>Hộp</Link></li>
                                         </ul>        
                                     </li>
                                     <li className="has-submenu">
-                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa Sáp</Link>
-                                        <ul className="submenu">
-                                            <li><Link to="apps-calendar.html" onClick={() => this.closeMenuAfterClicked()}>Bó</Link></li>
-                                            <li><Link to="apps-tickets.html" onClick={() => this.closeMenuAfterClicked()}>Giỏ</Link></li>
-                                            <li><Link to="apps-taskboard.html" onClick={() => this.closeMenuAfterClicked()}>Hộp</Link></li>
-                                        </ul>   
-                                    </li>
-                                    <li className="has-submenu">
-                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa Gấu Bông/Gấu Bông</Link>             
+                                        <Link to="#" onClick={() => this.closeMenuAfterClicked()}>Hoa Gấu Bông</Link>             
                                     </li>
                                     <li className="has-submenu" onClick={() => this.closeMenuAfterClicked()}>
                                         <Link to="#">Giỏ Hoa Trái Cây</Link>             
