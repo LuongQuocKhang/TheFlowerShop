@@ -1,10 +1,37 @@
 import React, { Component } from 'react'
 import DataTable from 'react-data-table-component';
+import { Link } from 'react-router-dom'
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
+import './order.page.css'
 
 export class OrderPage extends Component {
 
-    
+    constructor() {
+        super();
+        this.state = {
+            startDate: '',
+            endDate: ''
+        }
+    }
+    handleChange() {
+
+    }
+    setStartDate(date) {
+        this.setState({
+            startDate: date
+        })
+    }
+    setEndDate(date) {
+        this.setState({
+            endDate: date
+        })
+    }
+
+
     render() {
+        const rowDisabledCriteria = row => row.status == "Đã giao hàng";
 
         const columns = [
             {
@@ -28,7 +55,7 @@ export class OrderPage extends Component {
                 selector: row => row.price,
             },
         ];
-        
+
         const data = [
             {
                 id: 1,
@@ -231,6 +258,7 @@ export class OrderPage extends Component {
         };
         return (
             <>
+
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="page-title-box">
@@ -245,16 +273,91 @@ export class OrderPage extends Component {
                         </div>
                     </div>
                 </div>
+                <div className='row'>
+                <div class="col-md-3 col-xl-3">
+                        <div class="card-box tilebox-one">
+                            <i class="icon-paypal float-right text-muted"></i>
+                            <h6 class="text-muted text-uppercase mt-0">Lợi Nhuận</h6>
+                            <h2 class="m-b-20">$<span data-plugin="counterup">46,782</span></h2>
+                            <span class="badge badge-danger"> -29% </span> <span class="text-muted">From previous period</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-3">
+                        <div class="card-box tilebox-one">
+                            <i class="icon-layers float-right text-muted"></i>
+                            <h6 class="text-muted text-uppercase mt-0">Số đơn hàng</h6>
+                            <h2 class="m-b-20" data-plugin="counterup">1,587</h2>
+                            <span class="badge badge-custom"> +11% </span> <span class="text-muted">From previous period</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-3">
+                        <div class="card-box tilebox-one">
+                            <i class="icon-chart float-right text-muted"></i>
+                            <h6 class="text-muted text-uppercase mt-0">Giá trung bình</h6>
+                            <h2 class="m-b-20">$<span data-plugin="counterup">15.9</span></h2>
+                            <span class="badge badge-custom"> 0% </span> <span class="text-muted">From previous period</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xl-3">
+                        <div class="card-box tilebox-one">
+                            <i class="icon-rocket float-right text-muted"></i>
+                            <h6 class="text-muted text-uppercase mt-0">Tổng số đơn hàng trong năm</h6>
+                            <h2 class="m-b-20" data-plugin="counterup">1,890</h2>
+                            <span class="badge badge-custom"> +89% </span> <span class="text-muted">Last year</span>
+                        </div>
+                    </div>
+                </div>
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="card-box task-detail">
                             <div className='row'>
+                                <div className='col-md-6'>
+                                    <div className='row'>
+                                        <div className='col-md-6'>
+                                            <div claclassNamess="form-group">
+                                                <label>Từ ngày</label>
+                                                <div>
+                                                    <div className="input-group">
+
+                                                        <DatePicker selected={this.state.startDate} onChange={(date) => this.setStartDate(date)} />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div className='col-md-6'>
+                                            <label>Đến ngày</label>
+                                            <div>
+                                                <div className="input-group">
+                                                    <DatePicker selected={this.state.endDate} onChange={(date) => this.setEndDate(date)} />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-md-12'>
+                                    <div className="hidden-print mt-4 mb-4">
+                                        <div className="text-left">
+                                            <Link href="#" className="btn btn-primary waves-effect waves-light btn-search-page">Tìm kiếm</Link>
+                                            <Link href="#" className="btn btn-primary waves-effect waves-light btn-ship-page"
+                                            >Xuất Excel</Link>
+                                            <Link href="#" className="btn btn-danger waves-effect waves-light btn-ship-page"
+                                            >Giao hàng</Link>
+
+                                        </div>
+                                    </div>
+                                </div>
                                 <div className='col-md-12' style={{ textAlign: "center" }}>
+
                                     <DataTable
                                         columns={columns}
                                         data={data}
                                         pagination
+                                        selectableRows
+                                        onSelectedRowsChange={() => this.handleChange()}
                                         paginationComponentOptions={paginationComponentOptions}
+                                        selectableRowDisabled={rowDisabledCriteria}
                                     />
                                 </div>
                             </div>

@@ -6,7 +6,7 @@ File: Responsive
 */
 
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
@@ -15,7 +15,7 @@ File: Responsive
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
@@ -82,7 +82,7 @@ File: Responsive
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1280px) {
   .navbar-nav .open .dropdown-menu {
     background-color: $white;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -151,13 +151,13 @@ File: Responsive
 
 
 /* Container-alt */
-@media (min-width: 768px) {
-  .container-alt {
-    width: 750px;
-  }
-}
+// @media (min-width: 768px) {
+//   .container-alt {
+//     width: 750px;
+//   }
+// }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .container-alt {
     width: 970px;
   }

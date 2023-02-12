@@ -280,7 +280,7 @@ File: Main Css File
 /*
   Responsive Menu
 */
-@media (min-width: 1280px) {
+@media (min-width: 1380px) {
   #topnav .navigation-menu > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -389,8 +389,8 @@ File: Main Css File
     display: block !important;
   }
 }
-
-@media (max-width: 991px) {
+/* Change sise of navbar when screen size change */
+@media (max-width: 1380px) {
   .wrapper {
     padding-top: 60px;
   }
@@ -5895,7 +5895,7 @@ Author: CoderThemes
 Email: coderthemes@gmail.com
 File: Responsive
 */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
@@ -5904,7 +5904,7 @@ File: Responsive
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
@@ -6032,13 +6032,13 @@ File: Responsive
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 800px) {
   .container-alt {
     width: 970px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .container-alt {
     width: 1170px;
   }

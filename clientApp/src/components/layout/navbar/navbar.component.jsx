@@ -96,8 +96,8 @@ export class NavbarComponent extends Component {
                                             <Link to='/orders' className="dropdown-item notify-item">
                                                 <i className="fi-cog"></i> <span>Đơn hàng</span>
                                             </Link>
-                                            <Link to='/orders' className="dropdown-item notify-item">
-                                                <i className="fi-cog"></i> <span>Báo cáo</span>
+                                            <Link to='/management' className="dropdown-item notify-item">
+                                                <i className="fi-cog"></i> <span>Quản lý</span>
                                             </Link>
                                             <Link to="#" className="dropdown-item notify-item"
                                                 onClick={() => logout()}>

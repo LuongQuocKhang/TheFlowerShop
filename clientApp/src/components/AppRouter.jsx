@@ -11,6 +11,9 @@ import FlowerDetailPage from '../pages/flower/flower.detail.page';
 import CartPage from '../pages/cart/cart.page';
 import FlowerListPage from '../pages/flower/flower.list.page';
 import OrderPage from '../pages/orders/order.page'
+import FlowerManagementListPage from '../pages/management/flowerManagement.list.page.jsx';
+import FlowerManagementDetailPage from '../pages/management/flowerManagement.detail.page';
+import FlowerManagementAddPage from '../pages/management/flowerManagement.add.page';
 
 export class AppRouter extends Component {
     render() {
@@ -35,8 +38,15 @@ export class AppRouter extends Component {
                             <Route path='/orders' element={
                                 <OrderPage />
                             }></Route>
-
-
+                            <Route path='/management' element={
+                                <FlowerManagementListPage />
+                            }></Route>
+                            <Route path='/management/:id' element={
+                                <FlowerManagementDetailPage />
+                            }></Route>
+                            <Route path='/management/add' element={
+                                <FlowerManagementAddPage />
+                            }></Route>
                         </Routes>
                     </div>
                 </div>
